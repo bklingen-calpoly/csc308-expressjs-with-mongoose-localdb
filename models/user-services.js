@@ -5,7 +5,7 @@ import userModel from "./user.js";
 mongoose.set("debug", true);
 
 mongoose
-  .connect("mongodb://localhost:27017/users", {
+  .connect("mongodb://127.0.0.1:27017/users", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -50,7 +50,10 @@ async function findUserByName(name) {
 async function findUserByJob(job) {
   return await userModel.find({ job: job });
 }
-
-exports.getUsers = getUsers;
-exports.findUserById = findUserById;
-exports.addUser = addUser;
+export default {
+  addUser,
+  getUsers,
+  findUserById,
+  findUserByName,
+  findUserByJob,
+};
