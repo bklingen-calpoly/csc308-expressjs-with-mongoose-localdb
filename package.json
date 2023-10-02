@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "prettier --check .",
-    "dev": "nodemon backend_with_db.js"
+    "dev": "nodemon backend_with_db.js",
+    "start": "node backend_with_db.js"
   },
   "author": "Dr. da Silva",
   "license": "ISC",
