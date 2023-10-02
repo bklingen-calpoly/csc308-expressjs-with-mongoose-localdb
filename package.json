@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "backend_with_db.js",
+  "type": "module",
   "scripts": {
     "test": "prettier --check .",
     "dev": "nodemon backend_with_db.js"

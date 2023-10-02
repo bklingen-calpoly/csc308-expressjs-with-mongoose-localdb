@@ -1,5 +1,8 @@
-const mongoose = require("mongoose");
-const userModel = require("./user");
+import mongoose from "mongoose";
+import userModel from "./user.js";
+
+// uncomment the following line to view mongoose debug messages
+mongoose.set("debug", true);
 
 mongoose
   .connect("mongodb://localhost:27017/users", {
