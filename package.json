@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "backend_with_db.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon backend_with_db.js"
   },
-  "author": "Dr. da Silva",
+  "author": "BJ Klingenberg",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

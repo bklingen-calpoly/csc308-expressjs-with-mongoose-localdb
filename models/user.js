@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
   {
@@ -12,14 +12,11 @@ const UserSchema = new mongoose.Schema(
       required: true,
       trim: true,
       validate(value) {
-        if (value.length < 2)
-          throw new Error("Invalid job, must be at least 2 characters.");
+        if (value.length < 2) throw new Error("Invalid job.");
       },
     },
   },
   { collection: "users_list" }
 );
 
-const User = mongoose.model("User", UserSchema);
-
-module.exports = User;
+export default UserSchema;
