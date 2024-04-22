@@ -5,15 +5,20 @@
   "main": "backend_with_db.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon backend_with_db.js"
   },
   "author": "BJ Klingenberg",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "babel-jest": "^29.7.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^6.0.10"
+    "jest": "^29.7.0",
+    "mongoose": "^6.0.10",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.13",
